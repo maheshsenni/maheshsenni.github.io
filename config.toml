@@ -1,0 +1,60 @@
+baseURL = "https://maheshsenni.github.io/"
+languageCode = "en-us"
+title = "Mahesh Senniappan"
+theme = "ezhil"
+paginate = 5
+
+copyright = "Creative Commons Attribution 4.0 International License"
+pygmentsstyle = "solarized-dark"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+googleAnalytics = "UA-123-45"
+disqusShortname = "maheshsenni-blog"
+
+[params]
+	subtitle = "Data Engineer writing about random topics, mostly tech."
+	disableDisqusTypes = ["page"]
+	featherIconsCDN = true
+	mode = "auto" # "dark", "auto", "light"
+	customCSS = "css/custom.css"
+	# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
+	customJS = ["https://code.jquery.com/jquery-3.4.1.js"]  # Custom JS scripts.
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/maheshsenni"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/mahesh-senniappan/"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+   tag = "tags"

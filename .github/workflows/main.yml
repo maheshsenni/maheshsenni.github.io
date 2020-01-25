@@ -1,0 +1,30 @@
+name: Build and publish blog
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build-website:
+    name: Run Hugo build and publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        ref: dev
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.62.2'
+
+      - name: Hugo build
+        run: hugo --minify
+
+      - name: Publish
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          # ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: master
+          PUBLISH_DIR: ./public
