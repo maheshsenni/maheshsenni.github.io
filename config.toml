@@ -9,8 +9,8 @@ pygmentsstyle = "solarized-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-googleAnalytics = "UA-123-45"
-disqusShortname = "maheshsenni-blog"
+googleAnalytics = "UA-36729883-2"
+disqusShortname = "maheshsenni"
 
 [params]
 	subtitle = "Data Engineer writing about random topics, mostly tech."

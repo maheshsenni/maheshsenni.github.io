@@ -2,7 +2,6 @@
 title: "Setting Up a Raspberry Pi Without Keyboard and Mouse (Headless)"
 date: 2020-01-29T13:54:27-06:00
 draft: false
-disqus: false
 ---
 
 > Originally [published in Medium](https://medium.com/@maheshsenni/setting-up-a-raspberry-pi-without-keyboard-and-mouse-headless-9359e0926807) on Feb 10, 2018

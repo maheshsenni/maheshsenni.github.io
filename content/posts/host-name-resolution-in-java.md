@@ -2,7 +2,6 @@
 title: "Host Name Resolution in Java"
 date: 2020-01-26T19:19:46-06:00
 draft: false
-disqus: false
 ---
 
 > Originally [published in Medium](https://medium.com/@maheshsenni/host-name-resolution-in-java-80301fea465a) on Apr 16, 2019
