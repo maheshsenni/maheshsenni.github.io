@@ -2,6 +2,7 @@
 title: "Host Name Resolution in Java"
 date: 2020-01-26T19:19:46-06:00
 draft: false
+tags: ["java", "dns"]
 ---
 
 It is very rare nowadays to find code that uses IP address to connect to servers — especially with the popularity of cloud based infrastructure and microservices. It is convenient to have human-friendly host names than a few random numbers put together. “mydatabase.company.com” is much easier to comprehend than “10.202.17.5”. It wouldn’t be an understatement if I said, host name resolution is one of the most overlooked and taken for granted functionality in software applications.
