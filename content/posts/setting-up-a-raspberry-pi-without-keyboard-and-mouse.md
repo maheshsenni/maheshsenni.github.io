@@ -4,8 +4,6 @@ date: 2020-01-29T13:54:27-06:00
 draft: false
 ---
 
-> Originally [published in Medium](https://medium.com/@maheshsenni/setting-up-a-raspberry-pi-without-keyboard-and-mouse-headless-9359e0926807) on Feb 10, 2018
-
 If you are someone like me without a USB keyboard, mouse or a LAN cable, it is not straight forward to install [Raspbian](https://www.raspbian.org/) on a [Raspberry Pi 3](https://www.raspberrypi.org/). As the latest releases of Raspbian come with [SSH disabled](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/) by default for security reasons, it took me a while to figure out a way to set it up with SSH enabled so that I can install and configure other tools on the Pi.
 
 Here are two methods that have worked for me.
@@ -80,6 +78,8 @@ This method installs an image of Raspbian directly in the SD card using an image
 13. Once you know the Pi’s IP address, SSH into it as `pi` user with the default password `raspberry`. It is best to change to change the default password once you login for security.
 
 If you have come this far, you should be able to make changes to your Raspberry Pi using SSH. Have a ☕️ and enjoy your Pi.
+
+> This post was originally [published in Medium](https://medium.com/@maheshsenni/setting-up-a-raspberry-pi-without-keyboard-and-mouse-headless-9359e0926807) on Feb 10, 2018
 
 ### References
 

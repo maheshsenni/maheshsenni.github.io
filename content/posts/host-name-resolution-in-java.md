@@ -4,9 +4,6 @@ date: 2020-01-26T19:19:46-06:00
 draft: false
 ---
 
-> Originally [published in Medium](https://medium.com/@maheshsenni/host-name-resolution-in-java-80301fea465a) on Apr 16, 2019
-
-
 It is very rare nowadays to find code that uses IP address to connect to servers — especially with the popularity of cloud based infrastructure and microservices. It is convenient to have human-friendly host names than a few random numbers put together. “mydatabase.company.com” is much easier to comprehend than “10.202.17.5”. It wouldn’t be an understatement if I said, host name resolution is one of the most overlooked and taken for granted functionality in software applications.
 
 Most often than not if you are thinking about DNS resolution, it is highly possible that you are facing connectivity issues and your application is not working as expected. Well, I was in the exact situation recently — we migrated our database to a new server and the [CNAME](https://en.wikipedia.org/wiki/CNAME_record) was updated to point to the new IP address. One of our Spring Boot applications was still writing to the old server even after the CNAME was switched to the new server. Although resolving the problem was straightforward, it got me thinking about DNS resolution and how it is done inside the JDK.
@@ -66,4 +63,4 @@ Older versions of the JDK used a different function called [gethostbyname](http:
 
 Host name resolution is a complex topic and if you start following the clues, it takes you to interesting places. This was an opportunity for me to peek into OpenJDK code and some native functions. Hope you find this useful and don’t forget to set `networkaddress.cache.ttl` and `networkaddress.cache.negative.ttl` properties for your application.
 
-
+> This post was originally [published in Medium](https://medium.com/@maheshsenni/host-name-resolution-in-java-80301fea465a) on Apr 16, 2019
