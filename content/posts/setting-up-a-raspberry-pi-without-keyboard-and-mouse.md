@@ -2,7 +2,7 @@
 title: "Setting Up a Raspberry Pi Without Keyboard and Mouse (Headless)"
 date: 2020-01-29T13:54:27-06:00
 draft: false
-tags: ["raspberrypi", "rpi", "setup", "headless"]
+tags: ["raspberrypi", "rpi", "setup", "headless", "how-to"]
 ---
 
 If you are someone like me without a USB keyboard, mouse or a LAN cable, it is not straight forward to install [Raspbian](https://www.raspbian.org/) on a [Raspberry Pi 3](https://www.raspberrypi.org/). As the latest releases of Raspbian come with [SSH disabled](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/) by default for security reasons, it took me a while to figure out a way to set it up with SSH enabled so that I can install and configure other tools on the Pi.
